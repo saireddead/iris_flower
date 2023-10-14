@@ -47,7 +47,7 @@ st.title("Census Visualization Data Web App")
 st.sidebar.title("Menu")
 # Using the 'if' statement, display raw data on the click of the checkbox.
 if st.sidebar.checkbox("Show raw data"):
-  st.subheader("Census data set")
+  st.table("Census data set")
   st.dataframe(census_df)
   st.write("Number of rows", census_df.shape[0])
   st.write("Number of columns", census_df.shape[1])
